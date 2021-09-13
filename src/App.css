@@ -1,0 +1,222 @@
+.logo {
+  float:left;
+}
+.contenedor{
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  
+}
+header .logo{
+  height: 10%;
+  width: 10%;
+  margin-left: 30px;
+  padding: 2px;
+}
+nav{
+  text-align: right;
+  padding:30px 50px 0 0;
+
+}
+
+nav > a{
+  color: #0e0c0c;
+  font-weight: 300px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav > a:hover{
+  text-decoration: underline;
+}
+
+header{
+  width: 100%;
+  height: 500px;
+  background: hsl(45, 97%, 49%); 
+   /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, hsla(0, 0%, 9%, 0.089), hsl(45, 98%, 49%)), url(../src/img/business-2717066__340.webp);   
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, hsla(0, 0%, 9%, 0.089), hsl(45, 98%, 49%)), url(../src/img/business-2717066__340.webp); 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+header .textos-header{
+  display: flex;
+  height: 230px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+header .logo{
+  height: 10%;
+  width: 10%;
+  margin-left: 30px;
+  padding: 2px;
+}
+.textos-header h1 {
+  font-size: 50px; 
+  color: #fff;
+}
+
+.textos-header h2 {
+  font-size: 30px; 
+  font-weight: 300;
+  color: #fff;
+}
+
+.wave{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.wave svg {
+  height: 100%; 
+  width: 100%;
+}
+.wave svg path {
+
+  stroke: none; 
+  fill: #fff;
+
+}
+
+/* Abaut us */
+
+.titulo{
+  color: #332d35;
+  font: size 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sobre-nosotros{
+  padding: 30px 0 60px 0;
+}
+
+.contenedor-sobre-nosotros{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.imagen-about-us{
+  width: 45%;
+}
+
+.sobre-nosotros .contenido-textos-nosotros{
+  width: 48%; 
+}
+
+.contenido-textos-nosotros h2{
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contenido-textos-nosotros p{
+  padding: 0px 0px 0px 15px;
+  font-weight: 300px;
+  text-align: justify;
+}
+/*servicios*/
+
+.los-servicios{
+  width:50%;
+  margin-left: 15px;
+}
+
+.contenedor-servicios .contenido-textos-servicios{
+  width:50%
+}
+
+.contenido-textos-servicios h3{
+  margin-bottom: 5px;
+  
+}
+
+.contenido-textos-servicios h3 span{
+  margin-bottom: 15px;
+  background:#f2e205;
+  color:#0d0d0d;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  margin-right: 10px;
+  margin-left: 10px;
+  vertical-align: 20%;
+}
+
+.contenido-textos-servicios p{
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+  display: flex;
+}
+
+/*Galeria*/
+
+.portafolio{
+  background: #f2f2f2;
+}
+
+.galeria-port{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imagen-port{
+  width: 24%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galeria{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: hsla(54, 84%, 51%, 0.692);
+  transition: transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hover-galeria img{
+  width: 50px;
+}
+
+.hover-galeria p{
+  color:#fff;
+}
+
+.imagen-port:hover .hover-galeria{
+  transform: scale(1);
+}
