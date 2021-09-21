@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Urbanist', sans-serif;    
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.titulo{
+    color: #0d0d0d;
+    font: size 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    height: 500px;
+    background: hsl(45, 97%, 49%); 
+     /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, hsla(0, 0%, 9%, 0.089), hsl(45, 98%, 49%)), url(../img/business-2717066__340.webp);   
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, hsla(0, 0%, 9%, 0.089), hsl(45, 98%, 49%)), url(../img/business-2717066__340.webp); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+nav{
+    text-align: right;
+    padding:30px 50px 0 0;
+
+}
+
+nav > a{
+    color: #0e0c0c;
+    font-weight: 300px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 230px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .logo{
+    height: 10%;
+    width: 10%;
+    margin-left: 30px;
+    padding: 2px;
+    
+   
+}
+
+.textos-header h1 {
+    font-size: 50px; 
+    color: #0d0d0d;
+}
+
+.textos-header h2 {
+    font-size: 30px; 
+    font-weight: 300;
+    color: #0d0d0d;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Abaut us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagen-about-us{
+    width: 45%;
+}
+
+.sobre-nosotros .contenido-textos-nosotros{
+    width: 48%; 
+}
+
+.contenido-textos-nosotros h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contenido-textos-nosotros p{
+    padding: 0px 0px 0px 15px;
+    font-weight: 300px;
+    text-align: justify;
+}
+
+/*servicios*/
+
+.los-servicios{
+    width: 225px;
+    margin-left: 15px;
+    float:right;
+}
+
+.contenedor-servicios .contenido-textos-servicios{
+    width:50%;
+}
+
+.contenido-textos-servicios h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.contenido-textos-servicios h3 span{
+    margin-bottom: 15px;
+    background:#f2e205;
+    color:#0d0d0d;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: 20%;
+}
+
+.contenido-textos-servicios p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300px;
+    text-align: justify;
+    display: flex;
+}
+
+/*Galeria*/
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(54, 84%, 51%, 0.692);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color:#fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*footer*/
+
+footer{
+    background: #bf9924;
+    padding: 25px 0 10px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #594916;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #0d0d0d;
+    border-bottom: 3px solid #594916;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #0d0d0d;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 25px 0 0 0;
+    color: #594916;
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    .servicios{
+        justify-content:center;
+        flex-direction:column;
+    }
+    
+    .los-servicios{
+        width: 90%;
+    }
+
+    /*portafolio*/
+
+    .imagen-port{
+        width: 44%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav >a{
+        margin-right: 5px;
+    }
+
+    /*galeria*/
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /*footer*/
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #0d0d0d;
+        border-bottom: 1px solid #0d0d0d;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
