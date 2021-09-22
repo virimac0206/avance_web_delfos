@@ -13,6 +13,7 @@ export  function Portafolio() {
          <section className="portafolio">
             <div className="contenedor">
                 <h2 className="titulo">Portafolio</h2>
+                <hr color = "black" className="BarraNegro" /><br />
                 <div className="galeria-port">
                     <div className="imagen-port">
                         <img src={img7} alt=""/>
@@ -65,7 +66,7 @@ export  function Portafolio() {
                     </div>
                     <div className="imagen-port">
                         <img src={img8} alt=""/>
-                        <div class="hover-galeria">
+                        <div className="hover-galeria">
                             <img src={icono1} alt=""/>
                             <p>Nuestro trabajo</p>
                         </div>

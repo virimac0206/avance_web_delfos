@@ -63,15 +63,17 @@ header .logo{
 }
 .textos-header h1 {
   font-size: 50px; 
-  color: #fff;
+  color: #0d0d0d;
 }
 
 .textos-header h2 {
   font-size: 30px; 
   font-weight: 300;
-  color: #fff;
+  color: #0d0d0d;
 }
-
+.BarraNegro {
+  size: 3;
+}
 .wave{
   position: absolute;
   bottom: 0;
@@ -94,7 +96,7 @@ header .logo{
 /* Abaut us */
 
 .titulo{
-  color: #332d35;
+  color: #0d0d0d;
   font: size 30px;
   text-align: center;
   margin-bottom: 60px;
@@ -131,8 +133,9 @@ header .logo{
 /*servicios*/
 
 .los-servicios{
-  width:50%;
+  width: 225px;
   margin-left: 15px;
+  float:right;
 }
 
 .contenedor-servicios .contenido-textos-servicios{
@@ -140,7 +143,8 @@ header .logo{
 }
 
 .contenido-textos-servicios h3{
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   
 }
 
@@ -153,16 +157,16 @@ header .logo{
   text-align: center;
   width: 30px;
   height: 30px;
-  padding: 2px;
+  padding: 5px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
   margin-right: 10px;
   margin-left: 10px;
   vertical-align: 20%;
-}
+  }
 
 .contenido-textos-servicios p{
   padding: 0px 0px 30px 15px;
-  font-weight: 300;
+  font-weight: 300px;
   text-align: justify;
   display: flex;
 }
@@ -219,4 +223,120 @@ header .logo{
 
 .imagen-port:hover .hover-galeria{
   transform: scale(1);
+}
+
+/*footer*/
+
+footer{
+  background: #bf9924;
+  padding: 25px 0 10px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #594916;
+}
+
+.content-foo{
+  text-align: center;
+}
+
+.content-foo h4{
+  color: #0d0d0d;
+  border-bottom: 3px solid #594916;
+  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p{
+  color: #0d0d0d;
+}
+
+.titulo-final{
+  text-align: center;
+  font-size: 24px;
+  margin: 25px 0 0 0;
+  color: #594916;
+}
+
+@media screen and (max-width: 500px) {
+  header{
+      background-position: center;
+  }
+  .contenedor-sobre-nosotros{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sobre-nosotros .contenido-textos{
+    width: 90%;
+}
+
+.imagen-about-us{
+    width: 90%;
+}
+
+.servicios{
+    justify-content:center;
+    flex-direction:column;
+}
+
+.los-servicios{
+    width: 90%;
+}
+
+/*portafolio*/
+
+.imagen-port{
+    width: 44%;
+}
+}
+
+@media screen and (max-width:500px) {
+  nav{
+      text-align: center;
+      padding: 30px 0 0 0;
+  }
+
+  nav >a{
+      margin-right: 5px;
+  }
+
+  /*galeria*/
+
+  .imagen-port{
+      width: 95%;
+  }
+
+  /*footer*/
+
+  .contenedor-footer{
+      flex-direction: column;
+      border: none;
+  }
+
+  .content-foo{
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+  .content-foo h4{
+      border: none;
+  }
+
+  .content-foo p{
+      color: #0d0d0d;
+      border-bottom: 1px solid #0d0d0d;
+      padding-bottom: 20px;
+  }
+
+  .titulo-final{
+      font-size: 20px;
+  }
 }

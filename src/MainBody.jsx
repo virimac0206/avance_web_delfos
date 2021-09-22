@@ -5,6 +5,7 @@ export  function MainBody() {
         <>
         <section className="contenedor sobre nosotros">
             <h2 className="titulo">Nosotros</h2>
+            <hr color = "black" className = "BarraNegro"/><br />
             <div className="contenedor-sobre-nosotros">
                 <img src={logo} alt="" className="imagen-about-us"/>
                 <div className="contenido-textos-nosotros">

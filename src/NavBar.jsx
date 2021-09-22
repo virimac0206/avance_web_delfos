@@ -13,8 +13,7 @@ return (
     <a href="#">Servicios</a>
     <a href="#">Cotiza</a>
     <section className="textos-header">
-        <h1> Agrega texto </h1>
-        <h2> Agrega texto 2 </h2>
+        <h2> Impactando el mundo del desarrollo de software </h2>
     </section>
     <div className="wave">
         <svg viewBox="0 0 500 150" preserveAspectRatio="none">
