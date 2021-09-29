@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'Urbanist', sans-serif;    
+    font-family: 'Raleway', sans-serif;
 }
 
 .contenedor{
@@ -31,9 +31,9 @@ header{
     height: 500px;
     background: hsl(45, 97%, 49%); 
      /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, hsla(0, 0%, 9%, 0.089), hsl(45, 98%, 49%)), url(../img/business-2717066__340.webp);   
+    background: -webkit-linear-gradient(to bottom, hsla(0, 0%, 9%, 0.089), hsl(45, 98%, 49%)), url(../img/diseño.jpg);   
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, hsla(0, 0%, 9%, 0.089), hsl(45, 98%, 49%)), url(../img/business-2717066__340.webp); 
+    background: linear-gradient(to bottom, hsla(0, 0%, 9%, 0.089), hsl(45, 98%, 49%)), url(../img/diseño.jpg); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -42,9 +42,20 @@ header{
 }
 
 nav{
-    text-align: right;
-    padding:30px 50px 0 0;
+    display: flex;
+    justify-content:flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 520;
+    padding-right: 25px;
+}
 
+.nav__items{
+    color: #0d0d0d;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 3px;
+    margin-bottom: -25px;
 }
 
 nav > a{
@@ -56,6 +67,8 @@ nav > a{
 
 nav > a:hover{
     text-decoration: underline;
+    background:#594916;
+    color:#f2e205;
 }
 
 header .textos-header{
@@ -69,13 +82,11 @@ header .textos-header{
 }
 
 header .logo{
-    height: 10%;
-    width: 10%;
+    height: 20%;
     margin-left: 30px;
-    padding: 2px;
-    
-   
+    padding: 20px;   
 }
+
 
 .textos-header h1 {
     font-size: 50px; 
@@ -89,12 +100,12 @@ header .logo{
 }
 
 .wave{
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* Abaut us */
+/* sobre nostros */
 
 main .sobre-nosotros{
     padding: 30px 0 60px 0;
@@ -131,6 +142,7 @@ main .sobre-nosotros{
     width: 225px;
     margin-left: 15px;
     float:right;
+    
 }
 
 .contenedor-servicios .contenido-textos-servicios{
@@ -200,11 +212,13 @@ main .sobre-nosotros{
     top: 0;
     transform: scale(0);
     background: hsla(54, 84%, 51%, 0.692);
-    transition: transform .5s;
+    transition: transform .5s ease-in-out;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    /*transform: translateY(100%);*/
+    
 }
 
 .hover-galeria img{
@@ -212,29 +226,29 @@ main .sobre-nosotros{
 }
 
 .hover-galeria p{
-    color:#fff;
+    color:#0d0d0d;
 }
 
 .imagen-port:hover .hover-galeria{
     transform: scale(1);
+    /*transform: translateY(0%);*/
 }
 
 /*footer*/
 
 footer{
     background: #bf9924;
-    padding: 25px 0 10px 0;
+    padding: 25px 0 0 0px;
     margin: auto;
     overflow: hidden;
 }
 
 .contenedor-footer{
     display: flex;
-    width: 90%;
+    width: 106%;
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 20px;
-    border-bottom: 1px solid #594916;
 }
 
 .content-foo{
@@ -245,17 +259,42 @@ footer{
     color: #0d0d0d;
     border-bottom: 3px solid #594916;
     margin-bottom: 5px;
-    margin-bottom: 10px;
 }
 
 .content-foo p{
     color: #0d0d0d;
 }
 
-.titulo-final{
+.footer__icons{
+    display: inline-block;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.footer__container-icons{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #0d0d0d;
     text-align: center;
-    font-size: 24px;
-    margin: 25px 0 0 0;
+    border: 1px solid #0d0d0d;
+    border-radius: 50%;
+}
+
+.footer__icon{
+    color: inherit;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.fab.footer__icon{
+    line-height: 30px;
+}
+
+.titulo-final{
+    text-align: right;
+    font-size: 10px;
+    margin: 0 30px 2px 0;
     color: #594916;
 }
 

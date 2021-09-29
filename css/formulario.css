@@ -7,9 +7,9 @@
     padding:0;
     box-sizing: border-box;
 }
-
+ 
 body{
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Raleway', sans-serif;
     /*background: #f2e205;  */
     /* fallback for old browsers */
    /* background: -webkit-linear-gradient(to left, #594916, #bf9924);  */
@@ -33,7 +33,7 @@ form{
     /*width: 100%;*/
     margin: auto;
 }
-
+ 
 form .grupo{
     position: relative;
     margin: 30px;
